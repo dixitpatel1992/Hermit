@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>hermit - Art buying and selling made easy</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        @font-face {
+           font-family: myFirstFont;
+           src: url(Apercu Pro Light.ttf);
+        }
+        a:hover{
+            text-decoration: none;
+        }
+
+        .container {min-height: 100%;}
+        
+
+
+        #para
+        {
+          font-size: 12px;
+          padding-top: 80px;
+        }
+        #Footer
+        {
+          font-size: 12px;
+        }
+        #content
+        {
+          border-left:12px solid white;
+        }
+
+        @media (min-width: 768px) {
+          #logoImg {
+            height: 75px;
+          }
+          #para
+          {
+              font-size: 16px;
+              text-align: center;
+              padding-top: 0px !important;
+          }
+           #Footer
+          {
+              font-size: 16px;
+              text-align: center;
+          }
+          #content
+          {              
+              border-left:20px solid white;              
+          }
+          #headerLogo
+          {
+              margin-left: 10px;
+          }
+        }
+
+        
+
+        
+        
+    </style>
+</head>
+
+<body style="background-color:black;color:white;font-family: myFirstFont;font-size:16px;letter-spacing: 2px;">
+
+        <div class="container">
+            <div class="row" id="headerLogo" style="margin-left:0px;">
+                <img src="logo.svg" id="logoImg" height=50px>       <!--Img size for mobile and tablet, see the media query for bigger screen than 768px-->
+                <hr style="margin:0px;width:75%">
+            </div>
+
+
+
+            <div class="row" id="Content">
+                <div class="col-md-2 col-xs-2">
+                    
+                </div>
+                <div class="col-md-8 col-xs-8" id="content" style="margin-top:2px;padding-top:18%;float:left;text-align:center;border-right:20px solid black;">  
+                    <p style="text-align:justify" id="para">                 
+                        “We seek to close the gap between artists and customers by making it simple to commission personalized artwork. Our algorithms help you find the perfect artist, without having to look through countless portfolios. We provide a space and means for the artists to create, which gives you a safer, easier and faster way to get the artwork you always dreamed of. “
+                    </p>
+                </div>
+                <div class="col-md-2 hidden-xs">
+                    <div style="border-bottom:2px solid white;border-left:2px solid white;padding-left:5px;margin-bottom:100%;margin-top:100px;"> 
+                        <a href="gallery.php" style="color:white;width:100%;margin-top:10%;display:block;">gallery</a>
+                    </div>
+
+                    <div style="border-bottom:2px solid white;border-left:2px solid white;padding-left:5px;margin-bottom:100%;"> 
+                        <a href="artist.php" style="color:white;width:100%;display:block;">artist</a>
+                    </div>
+
+                    <div style="border-bottom:2px solid white;border-left:2px solid white;padding-left:5px"> 
+                        <a href="buyer.php" style="color:white;width:100%;display:block;">buyer</a>
+                    </div>
+                </div>
+                <div class="col-xs-2 hidden-md">&nbsp;
+                </div>
+
+            </div>
+
+
+            
+        </div>
+        <div class="row" id="Footer" style="text-align:center">
+                
+                <!--div style="width:100%;text-align:center;">
+                    <span style="width:40%;float:left;"> 
+                        <hr style="margin-top:10px;margin-bottom:0px;">
+                    </span>
+                    <span>Our Affiliates</span>
+                     <span style="width:40%;float:right;"> 
+                        <hr style="margin-top:10px;margin-bottom:0px;">
+                    </span>
+                </div-->
+                
+                <div class="col-md-4 col-xs-3"> 
+                        <hr style="margin-top:10px;margin-bottom:0px;">
+                </div>
+                <div class="col-md-4 col-xs-6"> Our Affiliates</div>
+                <div class="col-md-4 col-xs-3"> 
+                        <hr style="margin-top:10px;margin-bottom:0px;">
+                </div>
+
+                <div class="col-md-12 col-xs-12">
+                    future founders & chicago innovation exchange
+                </div>
+
+        </div>
+        
+
+                <nav>
+          <ul class="list-unstyled main-menu">
+         
+            <!--Include your navigation here-->
+            <li class="text-right" style="border:0px !important;margin:0px !important;"><a href="#" id="nav-close">X</a></li>
+            <li style="text-align:center"><a href="gallery.php">gallery</a></li>
+            <li style="text-align:center"><a href="artist.php">artist</a></li>
+            <li style="text-align:center"><a href="buyer.php">buyer</a></li>
+            <!--li><a href="#">Dropdown</a>
+              <ul class="list-unstyled">
+                  <li class="sub-nav"><a href="#">Sub Menu One <span class="icon"></span></a></li>
+                  <li class="sub-nav"><a href="#">Sub Menu Two <span class="icon"></span></a></li>
+                  <li class="sub-nav"><a href="#">Sub Menu Three <span class="icon"></span></a></li>
+                  <li class="sub-nav"><a href="#">Sub Menu Four <span class="icon"></span></a></li>
+                  <li class="sub-nav"><a href="#">Sub Menu Five <span class="icon"></span></a></li>
+              </ul>
+            </li-->
+            <!--li><a href="#">Menu Four <span class="icon"></span></a></li>
+            <li><a href="#">Menu Five <span class="icon"></span></a></li-->
+          </ul>
+        </nav>
+         
+
+        <div class="hidden-lg">
+            <div class="navbar navbar-fixed-top ">             
+                <div class="navbar-header pull-right">
+                  <a id="nav-expander" class="nav-expander fixed" style="
+    padding-right: 15px !important;
+    text-align: right;
+">
+                    MENU &nbsp;<i class="fa fa-bars fa-lg white"></i>
+                  </a>
+                </div>
+            </div>
+
+        </div>      
+
+                
+                
+    
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+
+
+
+    //Main container div to equals to the page height
+    $(function(){
+      $('.container').css({ height: $(window).innerHeight() });
+      $(window).resize(function(){
+        $('.container').css({ height: $(window).innerHeight() });
+      });
+    });
+    
+
+
+
+
+    $(document).ready(function(){                                               
+ 
+       //Navigation Menu Slider
+        $('#nav-expander').on('click',function(e){
+            e.preventDefault();
+            $('body').toggleClass('nav-expanded');
+        });
+        $('#nav-close').on('click',function(e){
+            e.preventDefault();
+            $('body').removeClass('nav-expanded');
+        });
+ 
+        // Initialize navgoco with default options
+        
+ 
+      });
+    </script>
+
+    <style type="text/css">
+            
+    a.nav-expander {
+      background: none repeat scroll 0 0 #000000;
+      color: #FFFFFF;
+      display: block;
+      font-size: 15px;
+      font-weight: 400;
+      height: 50px;
+      margin-right: 0;
+      padding: 1em 1.6em 2em;
+      position: absolute;
+      right: 0;
+      text-decoration: none;
+      text-transform: uppercase;
+      top: 0;
+      transition: right 0.3s ease-in-out 0s;
+      width: 130px;
+      z-index: 12;
+     
+      transition: right 0.3s ease-in-out 0s;
+      -webkit-transition: right 0.3s ease-in-out 0s;
+      -moz-transition: right 0.3s ease-in-out 0s;
+      -o-transition: right 0.3s ease-in-out 0s;
+ 
+    }
+     
+    a.nav-expander:hover {
+      cursor: pointer;
+    }
+     
+    a.nav-expander.fixed {
+      position: fixed;
+    }
+     
+    .nav-expanded a.nav-expander.fixed {
+        right: 20em;
+    }
+
+    nav {
+      background: black;
+      display: block;
+      height: 100%;
+      overflow: auto;
+      position: fixed;
+      right: -20em;
+      font-size: 15px;
+      top: 0;
+      width: 20em;
+      z-index: 2000;
+     
+      transition: right 0.3s ease-in-out 0s;
+      -webkit-transition: right 0.3s ease-in-out 0s;
+      -moz-transition: right 0.3s ease-in-out 0s;
+      -o-transition: right 0.3s ease-in-out 0s;
+ 
+    }
+    .nav-expanded nav {
+      right: 0;
+    }
+     
+    body.nav-expanded {
+      margin-left: 0em;
+      transition: right 0.4s ease-in-out 0s;
+      -webkit-transition: right 0.4s ease-in-out 0s;
+      -moz-transition: right 0.4s ease-in-out 0s;
+      -o-transition: right 0.4s ease-in-out 0s;
+    }
+     
+    #nav-close {
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      padding-right: 10px;
+    }
+    .main-menu {
+      /*padding-top: 12px;*/
+    }
+     
+    .main-menu li {
+      border-bottom: 1px solid white;
+      border-left: 1px solid white;
+      margin-left: 20px;
+      margin-top:40px;
+      font-size: 18px;
+      padding: 12px;
+    }
+     
+    .main-menu li a {
+      color: white;
+      text-decoration: none;
+    }
+     
+    .main-menu li a:hover {
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+     
+    .main-menu li .sub-nav {
+      border-bottom: 0px;
+      padding: 4px;
+    }
+     
+    .main-menu a .caret {
+        width: 0;
+        height: 0;
+        display: inline-block;
+        vertical-align: top;
+        border-top: 4px solid #4f5963;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+        content: "";
+        margin-top: 8px;
+    }
+     
+    .main-menu a:hover .caret {
+        border-top-color: #4f5963;
+    }
+     
+    .main-menu li.open > a > .caret {
+        border-top: none;
+        border-bottom: 4px solid #4f5963;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+    }
+     
+    .main-menu li.open > a:hover > .caret {
+        border-bottom-color: #4f5963;
+    }
+     
+    .icon:before {
+      font-family: 'FontAwesome';
+      font-style: normal;
+      font-variant: normal;
+      font-weight: normal;
+      line-height: 1;
+      text-transform: none;
+      content: '\f105';
+    }
+     
+    .main-menu li > a > span.icon {
+      float: right;
+      margin: 0.1em 1.7em -0.1em 0;
+      opacity: 0;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+     
+    }
+     
+    .main-menu li > a:hover > span.icon {
+      float: right;
+      margin: 0.1em 0.8em -0.1em 0;
+      opacity: 1;
+    }
+        </style>
+
+
+</body>
+
+</html>
