@@ -15,18 +15,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
     <style>
-        @font-face {
-           font-family: myFirstFont;
-           src: url(Apercu Pro Light.ttf);
-        }
+       
         a:hover{
             text-decoration: none;
         }
@@ -44,15 +34,10 @@
         {
           font-size: 12px;
         }
-        #content
-        {
-          border-left:12px solid white;
-        }
+        
 
         @media (min-width: 768px) {
-          #logoImg {
-            height: 75px;
-          }
+          
           #para
           {
               font-size: 16px;
@@ -68,41 +53,40 @@
           {              
               border-left:20px solid white;              
           }
-          #headerLogo
-          {
-              margin-left: 10px;
-          }
-        }
-
-        
-
-        
-        
+          
+        }              
     </style>
 </head>
 
-<body style="background-color:black;color:white;font-family: myFirstFont;font-size:16px;letter-spacing: 2px;">
+<body style="background-color:black;color:white;font-size:16px;letter-spacing: 2px;font-weight:350;">
 
         <div class="container">
-            <div class="row" id="headerLogo" style="margin-left:0px;">
-                <img src="logo.svg" id="logoImg" height=50px>       <!--Img size for mobile and tablet, see the media query for bigger screen than 768px-->
-                <hr style="margin:0px;width:75%">
-            </div>
 
-
+            <?php include 'header.php';?>
 
             <div class="row" id="Content">
+
+                <!--Making some space on mobile/desktop-->
                 <div class="col-md-2 col-xs-2">
                     
                 </div>
+                <!--Making some space on mobile/desktop-->
+
+
+
+                <!--Main content, vertical bar is a border in here-->
                 <div class="col-md-8 col-xs-8" id="content" style="margin-top:2px;padding-top:18%;float:left;text-align:center;border-right:20px solid black;">  
-                    <p style="text-align:justify" id="para">                 
+                    <p style="text-align:left" id="para">                 
                         “We seek to close the gap between artists and customers by making it simple to commission personalized artwork. Our algorithms help you find the perfect artist, without having to look through countless portfolios. We provide a space and means for the artists to create, which gives you a safer, easier and faster way to get the artwork you always dreamed of. “
                     </p>
                 </div>
+                <!--Main content, vertical bar is a border in here-->
+
+
+                <!--Menu on desktop-->
                 <div class="col-md-2 hidden-xs">
                     <div style="border-bottom:2px solid white;border-left:2px solid white;padding-left:5px;margin-bottom:100%;margin-top:100px;"> 
-                        <a href="gallery.php" style="color:white;width:100%;margin-top:10%;display:block;">gallery</a>
+                        <a href="gallery.php" style="color:white;width:100%;margin-top:10%;display:block;">art galleries</a>
                     </div>
 
                     <div style="border-bottom:2px solid white;border-left:2px solid white;padding-left:5px;margin-bottom:100%;"> 
@@ -113,26 +97,23 @@
                         <a href="buyer.php" style="color:white;width:100%;display:block;">buyer</a>
                     </div>
                 </div>
+                <!--Menu on desktop-->
+
+
+                <!--creating some gap on mobile-->
                 <div class="col-xs-2 hidden-md">&nbsp;
                 </div>
+                <!--creating some gap on mobile-->
 
             </div>
 
 
             
         </div>
+
+
+        <!-- Footer for our affiliates-->
         <div class="row" id="Footer" style="text-align:center">
-                
-                <!--div style="width:100%;text-align:center;">
-                    <span style="width:40%;float:left;"> 
-                        <hr style="margin-top:10px;margin-bottom:0px;">
-                    </span>
-                    <span>Our Affiliates</span>
-                     <span style="width:40%;float:right;"> 
-                        <hr style="margin-top:10px;margin-bottom:0px;">
-                    </span>
-                </div-->
-                
                 <div class="col-md-4 col-xs-3"> 
                         <hr style="margin-top:10px;margin-bottom:0px;">
                 </div>
@@ -142,18 +123,18 @@
                 </div>
 
                 <div class="col-md-12 col-xs-12">
-                    future founders & chicago innovation exchange
+                    future founders & polsky exchange north
                 </div>
-
         </div>
+        <!-- Footer for our affiliates-->
         
-
-                <nav>
-          <ul class="list-unstyled main-menu">
+        <!--Nav Menu on mobile-->
+        <nav style="margin-top:63px;">
+          <ul class="list-unstyled main-menu" >
          
             <!--Include your navigation here-->
-            <li class="text-right" style="border:0px !important;margin:0px !important;"><a href="#" id="nav-close">X</a></li>
-            <li style="text-align:center"><a href="gallery.php">gallery</a></li>
+            
+            <li style="text-align:center"><a href="gallery.php">art galleries</a></li>
             <li style="text-align:center"><a href="artist.php">artist</a></li>
             <li style="text-align:center"><a href="buyer.php">buyer</a></li>
             <!--li><a href="#">Dropdown</a>
@@ -169,21 +150,22 @@
             <li><a href="#">Menu Five <span class="icon"></span></a></li-->
           </ul>
         </nav>
+        <!--Nav Menu on mobile-->
          
 
+
+        <!--mobile nav "Menu" div -->
         <div class="hidden-lg">
             <div class="navbar navbar-fixed-top ">             
                 <div class="navbar-header pull-right">
-                  <a id="nav-expander" class="nav-expander fixed" style="
-    padding-right: 15px !important;
-    text-align: right;
-">
-                    MENU &nbsp;<i class="fa fa-bars fa-lg white"></i>
-                  </a>
+                  
+                      
+                      <a id="nav-toggle" href="#"><span></span></a>
+                  
                 </div>
             </div>
-
-        </div>      
+        </div>  
+        <!--mobile nav "Menu" div -->    
 
                 
                 
@@ -198,11 +180,28 @@
 
     <!-- Menu Toggle Script -->
     <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
+    
+    
 
+    $(document).ready(function(){                                               
+ 
+       //Navigation Menu Slider
+        $('#nav-toggle').on('click',function(e){
+            e.preventDefault();
+            $('body').toggleClass('nav-expanded');
+        });
+        
+
+
+        $('#nav-close').on('click',function(e){
+            e.preventDefault();
+            $('body').removeClass('nav-expanded');
+        });
+ 
+        // Initialize navgoco with default options
+        
+ 
+      });
 
 
 
@@ -213,29 +212,18 @@
         $('.container').css({ height: $(window).innerHeight() });
       });
     });
+    //Main container div to equals to the page height
+
+
+
+
     
-
-
-
-
-    $(document).ready(function(){                                               
- 
-       //Navigation Menu Slider
-        $('#nav-expander').on('click',function(e){
-            e.preventDefault();
-            $('body').toggleClass('nav-expanded');
-        });
-        $('#nav-close').on('click',function(e){
-            e.preventDefault();
-            $('body').removeClass('nav-expanded');
-        });
- 
-        // Initialize navgoco with default options
-        
- 
-      });
     </script>
 
+
+
+
+    <!--CSS only related to mobile menu-->
     <style type="text/css">
             
     a.nav-expander {
@@ -316,10 +304,10 @@
     }
      
     .main-menu li {
-      border-bottom: 1px solid white;
-      border-left: 1px solid white;
+      border-bottom: 3px solid white;
+      border-left: 5px solid white;
       margin-left: 20px;
-      margin-top:40px;
+      margin-top:80px;
       font-size: 18px;
       padding: 12px;
     }
@@ -394,6 +382,56 @@
     }
         </style>
 
+        <!--CSS only related to mobile menu-->
+
+
+
+
+        <!--CSS/js only related to hamburger-->
+        <style type="text/css">
+          #nav-toggle { position: absolute; left: 80%; top: 50%; }
+
+          #nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+          #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+            cursor: pointer;
+            border-radius: 1px;
+            height: 5px;
+            width: 35px;
+            background: white;
+            position: absolute;
+            display: block;
+            content: '';
+          }
+          #nav-toggle span:before {
+            top: -10px; 
+          }
+          #nav-toggle span:after {
+            bottom: -10px;
+          }
+
+          #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+            transition: all 500ms ease-in-out;
+          }
+          #nav-toggle.active span {
+            background-color: transparent;
+          }
+          #nav-toggle.active span:before, #nav-toggle.active span:after {
+            top: 0;
+          }
+          #nav-toggle.active span:before {
+            transform: rotate(45deg);
+          }
+          #nav-toggle.active span:after {
+            transform: rotate(-45deg);
+          }
+        </style>
+        <script type="text/javascript">
+          document.querySelector( "#nav-toggle" )
+          .addEventListener( "click", function() {
+            this.classList.toggle( "active" );
+          });
+        </script>
+        <!--CSS/js only related to hamburger-->
 
 </body>
 
